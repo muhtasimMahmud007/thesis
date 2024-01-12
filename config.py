@@ -11,22 +11,22 @@ cfg                                         = __C
 # Dataset Config
 #
 __C.DATASETS                                = edict()
-__C.DATASETS.SHAPENET                       = edict()
-__C.DATASETS.SHAPENET.TAXONOMY_FILE_PATH    = './datasets/ShapeNet.json'
-# __C.DATASETS.SHAPENET.TAXONOMY_FILE_PATH  = './datasets/PascalShapeNet.json'
-__C.DATASETS.SHAPENET.RENDERING_PATH        = 'E:/T2230067/zipped/ShapeNetRendering/%s/%s/rendering/%02d.png'
-# __C.DATASETS.SHAPENET.RENDERING_PATH      = '/home/hzxie/Datasets/ShapeNet/PascalShapeNetRendering/%s/%s/render_%04d.jpg'
-__C.DATASETS.SHAPENET.VOXEL_PATH            = 'E:/T2230067/zipped/ShapeNetVox32/%s/%s/model.binvox'
+# __C.DATASETS.SHAPENET                       = edict()
+# __C.DATASETS.SHAPENET.TAXONOMY_FILE_PATH    = './datasets/ShapeNet.json'
+# # __C.DATASETS.SHAPENET.TAXONOMY_FILE_PATH  = './datasets/PascalShapeNet.json'
+# __C.DATASETS.SHAPENET.RENDERING_PATH        = 'E:/T2230067/zipped/ShapeNetRendering/%s/%s/rendering/%02d.png'
+# # __C.DATASETS.SHAPENET.RENDERING_PATH      = '/home/hzxie/Datasets/ShapeNet/PascalShapeNetRendering/%s/%s/render_%04d.jpg'
+# __C.DATASETS.SHAPENET.VOXEL_PATH            = 'E:/T2230067/zipped/ShapeNetVox32/%s/%s/model.binvox'
 __C.DATASETS.PASCAL3D                       = edict()
-__C.DATASETS.PASCAL3D.TAXONOMY_FILE_PATH    = './datasets/Pascal3D.json'
-__C.DATASETS.PASCAL3D.ANNOTATION_PATH       = 'E:/T2230067/zipped/PASCAL3D+_release1.1/Annotations/%s_imagenet/%s.mat'
-__C.DATASETS.PASCAL3D.RENDERING_PATH        = 'E:/T2230067/zippe/\PASCAL3D+_release1.1/Images/%s_imagenet/%s.JPEG'
-__C.DATASETS.PASCAL3D.VOXEL_PATH            = 'E:/T2230067/zipped/PASCAL3D+_release1.1/CAD/%s/%02d.binvox'
+__C.DATASETS.PASCAL3D.TAXONOMY_FILE_PATH    = '/content/Pascal3D.json'
+__C.DATASETS.PASCAL3D.ANNOTATION_PATH       = '/content/drive/MyDrive/pascal dataset/pascal data/PASCAL3D+_release1.1/Annotations/%s_imagenet/%s.mat'
+__C.DATASETS.PASCAL3D.RENDERING_PATH        = '/content/drive/MyDrive/pascal dataset/pascal data/PASCAL3D+_release1.1/Images/%s_imagenet/%s.JPEG'
+__C.DATASETS.PASCAL3D.VOXEL_PATH            = '/content/drive/MyDrive/pascal dataset/pascal data/PASCAL3D+_release1.1/CAD/%s/%02d.binvox'
 __C.DATASETS.PIX3D                          = edict()
-__C.DATASETS.PIX3D.TAXONOMY_FILE_PATH       = './datasets/Pix3D.json'
-__C.DATASETS.PIX3D.ANNOTATION_PATH          = 'E:/T2230067/zipped/pix3d_full/pix3d.json'
-__C.DATASETS.PIX3D.RENDERING_PATH           = 'E:/T2230067/zipped/pix3d_full/img/%s/%s.%s'
-__C.DATASETS.PIX3D.VOXEL_PATH               = 'E:/T2230067/zipped/pix3d_full/model/%s/%s/%s.binvox'
+__C.DATASETS.PIX3D.TAXONOMY_FILE_PATH       = '/content/Pix3D.json'
+__C.DATASETS.PIX3D.ANNOTATION_PATH          = '/content/drive/MyDrive/Dataset_zipped/pix3d_full/pix3d.json'
+__C.DATASETS.PIX3D.RENDERING_PATH           = '/content/drive/MyDrive/Dataset_zipped/pix3d_full/img/%s/%s.%s'
+__C.DATASETS.PIX3D.VOXEL_PATH               = '/content/drive/MyDrive/Dataset_zipped/pix3d_full/model/%s/%s/%s.binvox'
 
 #
 # Dataset
@@ -34,10 +34,12 @@ __C.DATASETS.PIX3D.VOXEL_PATH               = 'E:/T2230067/zipped/pix3d_full/mod
 __C.DATASET                                 = edict()
 __C.DATASET.MEAN                            = [0.5, 0.5, 0.5]
 __C.DATASET.STD                             = [0.5, 0.5, 0.5]
-__C.DATASET.TRAIN_DATASET                   = 'ShapeNet'
-__C.DATASET.TEST_DATASET                    = 'ShapeNet'
-# __C.DATASET.TEST_DATASET                    = 'Pascal3D'
-# __C.DATASET.TEST_DATASET                    = 'Pix3D'
+# __C.DATASET.TRAIN_DATASET                   = 'ShapeNet'
+__C.DATASET.TRAIN_DATASET                   = 'Pascal3D'
+__C.DATASET.TRAIN_DATASET                   = 'Pix3D'
+# __C.DATASET.TEST_DATASET                    = 'ShapeNet'
+__C.DATASET.TEST_DATASET                    = 'Pascal3D'
+__C.DATASET.TEST_DATASET                    = 'Pix3D'
 
 #
 # Common
